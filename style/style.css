@@ -29,7 +29,6 @@ p {
 }
 
 body {
-  /* min-height: 8000px; */
   user-select: none;
   -moz-user-select: none; /* Untuk Firefox */
   -webkit-user-select: none; /* Untuk Safari dan Chrome */
@@ -72,6 +71,10 @@ body {
   font-style: italic;
   padding: 2px;
   font-family: "DM Serif Text", serif;
+}
+
+#hamburger {
+  display: none;
 }
 
 /* Hero section */
@@ -162,7 +165,6 @@ body {
   margin: auto;
   display: flex;
   justify-content: center;
-  /* width: 80%; */
   flex-wrap: wrap;
 }
 
@@ -183,33 +185,38 @@ body {
 
 /* Education */
 .education hr {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
 .education main {
   display: flex;
-  justify-content: space-between;
-  text-align: left;
+  justify-content: center;
+  text-align: center;
   height: auto;
-  width: 80%;
+  width: 90%;
   margin: auto;
-  /* border: solid 1px seagreen; */
   padding: 10px 20px;
-  font-size: medium;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
 }
 .education main .center {
+  border: 1px solid seagreen;
   padding: 0 5px;
 }
 
+/* interest */
 .interest main {
   background-color: rgb(30, 29, 44);
   padding: 2em;
   color: white;
   font-size: 16px;
   font-weight: 300;
+}
+
+.interest {
+  font-size: 1rem;
 }
 
 /* Award */
@@ -278,6 +285,35 @@ footer {
 @media (max-width: 768px) {
   html {
     font-size: 62.5%;
+  }
+
+  #hamburger {
+    display: inline-block;
+  }
+
+  .navbar .navlink {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: white;
+    width: 40%;
+    height: 100vh;
+    transition: 0.3s;
+    padding: 2rem 1rem 0 0;
+    box-shadow: -2px 0px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar .navlink.active {
+    right: 0;
+  }
+  .navbar .navlink a {
+    display: block;
+    padding: 1rem;
+  }
+
+  .education {
+    font-size: 12px;
   }
 }
 /* Mobile */
