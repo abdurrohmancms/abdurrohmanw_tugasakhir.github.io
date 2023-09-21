@@ -308,6 +308,7 @@ footer {
     right: 0;
   }
   .navbar .navlink a {
+    font-size: 2rem;
     display: block;
     padding: 1rem;
   }
