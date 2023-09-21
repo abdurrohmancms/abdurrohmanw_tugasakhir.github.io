@@ -1,0 +1,302 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.experience,
+.about,
+.skill,
+.education,
+.interest,
+.penghargaan,
+.footer {
+  padding-top: 10rem;
+  justify-content: center;
+  text-align: center;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  /* min-height: 8000px; */
+  user-select: none;
+  -moz-user-select: none; /* Untuk Firefox */
+  -webkit-user-select: none; /* Untuk Safari dan Chrome */
+  -ms-user-select: none; /* Untuk Microsoft Edge */
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.4rem;
+  z-index: 99;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .navlink {
+  text-align: right;
+}
+.navbar .navlink a {
+  color: grey;
+  font-size: 1.2rem;
+  margin-left: 20px;
+  border-bottom: 2px solid rgba(46, 139, 87, 0);
+  padding-bottom: 0px;
+  transition: 0.5s;
+}
+.navbar .navlink a:hover {
+  border-bottom: 2px solid rgb(30, 29, 44);
+  padding-bottom: 2px;
+  color: rgb(30, 29, 44);
+}
+
+.navbar .navbar-logo {
+  color: rgb(30, 29, 44);
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: italic;
+  padding: 2px;
+  font-family: "DM Serif Text", serif;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  width: auto;
+  height: 100vh;
+  background-image: url(../img/bghero.jpg);
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  align-items: center;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .content {
+  padding-top: 5rem;
+  text-align: center;
+  color: aliceblue;
+  color: rgba(255, 255, 255, 0.7);
+}
+.hero .content h1 {
+  font-size: 4em;
+  letter-spacing: 10px;
+}
+
+.hero img {
+  height: 150px;
+  border-radius: 50%;
+  filter: grayscale();
+}
+.hero .content p {
+  font-size: 2em;
+}
+
+/* about me */
+.about {
+  padding: 10rem 2.4rem 0rem 2.4rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* experience */
+
+.experience .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.experience .container .box {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.experience .container .box .line {
+  height: 1.5px;
+  background-color: rgb(30, 29, 44);
+}
+
+@media (max-width: 768px) {
+  .experience {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Skills */
+.skill {
+  padding-top: 6.2rem;
+}
+
+.skill main {
+  padding: 35px;
+  width: 100%;
+  color: aliceblue;
+  background-color: rgb(30, 29, 44);
+}
+.skill .card {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  /* width: 80%; */
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px 10px;
+}
+.skill-card .image-crop {
+  display: flex;
+  justify-content: center;
+  height: 8rem;
+  width: 8rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+/* Education */
+.education hr {
+  width: 80%;
+  margin: auto;
+}
+
+.education main {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  height: auto;
+  width: 80%;
+  margin: auto;
+  /* border: solid 1px seagreen; */
+  padding: 10px 20px;
+  font-size: medium;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.education main .center {
+  padding: 0 5px;
+}
+
+.interest main {
+  background-color: rgb(30, 29, 44);
+  padding: 2em;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Award */
+
+.awards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.award {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.award img {
+  max-width: 5rem;
+  height: auto;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .awards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .award {
+    width: 80%;
+  }
+}
+
+/* footer */
+footer {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer-main {
+  padding: 2em;
+  width: 100%;
+  background-color: rgb(30, 29, 44);
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+/* Mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+b {
+  font-weight: 600;
+}
